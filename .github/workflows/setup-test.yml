@@ -21,14 +21,12 @@ jobs:
     - name: Run tests
       run: |
           pytest
-    - name: Upload coverage
-      uses: actions/upload-artifact@v2
-      with:
-        name: coverage
+    - name: pytest covergae report
       run: |
           pytest --cov
-          mv .coverage .github/workflows/.coverage
-          mv coverage_re .github/workflows/htmlcov
-          echo "Coverage uploaded"
-          pytest --cov --cov-report=html:coverage_re 
+          pytest --cov --cov-report=html:coverage_re
+   
+          
+    
+
 
