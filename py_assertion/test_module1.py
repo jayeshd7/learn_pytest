@@ -1,6 +1,3 @@
-import pytest
-
-
 def test_func1():
     name = "john"
     for letter in name:

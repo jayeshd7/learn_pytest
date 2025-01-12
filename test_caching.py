@@ -17,4 +17,3 @@ def my_data(pytestconfig):
 
 def test_function1(my_data):
     assert my_data == 23
-   
