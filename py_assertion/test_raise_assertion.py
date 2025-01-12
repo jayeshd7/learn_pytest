@@ -14,11 +14,13 @@ def test_cases03():
     print(str(excinfo.value))
 
 
-def test_cases04():
+def cases04():
     raise Exception("This is an exception")
+
+
 
 def test_cases05():
     with pytest.raises(Exception) as excinfo:
-        test_cases04()
+        cases04()
     print(str(excinfo.value))
     assert "exception" in str(excinfo.value)
