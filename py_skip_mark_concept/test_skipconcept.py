@@ -17,7 +17,7 @@ class TestSkip:
     def test_run02(self):
         assert 1 == 1
 
-    @staticmethod
+
     def run03(name):
         if name == "john":
             return "john"
