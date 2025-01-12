@@ -23,7 +23,7 @@ jobs:
           pytest
     - name: pytest coverage report
       run: |
-          pytest --cov --cov-report=html:coverage_re
+          pytest --cov
 
           
     
