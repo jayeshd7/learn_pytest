@@ -24,10 +24,9 @@ jobs:
     - name: pytest coverage report
       run: |
           pytest --cov --cov-report=html:coverage_re
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v2
-      with:
-          name: coverage
+    - name: pytest open coverage report
+      run: |
+          open coverage_re/index.html
           
     
 
