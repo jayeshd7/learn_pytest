@@ -1,7 +1,7 @@
 def test_func1():
     a = 2
     b = 3
-    assert a + b == 7
+    assert a + b == 5
 
 
 def test_func2():
